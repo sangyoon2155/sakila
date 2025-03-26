@@ -9,6 +9,8 @@
 	<h1>Index</h1>
 	<ol>
 		<li><a href="/sakila/d0325/rentalList.jsp">대여목록</a></li>
+		<li><a href="/sakila/d0326/filmList.jsp">필름목록</a></li>
+		<li><a href="/sakila/d0326/actorList.jsp">액터목록</a></li>
 	</ol>
 </body>
 </html>

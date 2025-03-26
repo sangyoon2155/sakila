@@ -143,7 +143,9 @@
             <th>rentalDate</th>
             <th>returnDate</th>
         </tr>
-        <% for (HashMap<String, Object> map : list) { %>
+        <%
+        for (HashMap<String, Object> map : list) { 
+        %>
             <tr>
                 <td><%= map.get("rentalId") %></td>
                 <td><%= map.get("filmTitle") %></td>
@@ -152,7 +154,9 @@
                 <td><%= map.get("rentalDate") %></td>
                 <td><%= map.get("returnDate") %></td>
             </tr>
-        <% } %>
+        <%
+        } 
+        %>
     </table>
 	<form action="/sakila/d0325/rentalList.jsp">
         store :
