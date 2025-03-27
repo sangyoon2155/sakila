@@ -49,7 +49,7 @@
     <title>Film List</title>
 </head>
 <body>
-    <h2>영화 목록</h2>
+    <h2>Film List</h2>
     <table border="1">
         <tr>
             <th>filmId</th>
