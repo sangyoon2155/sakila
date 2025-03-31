@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
-<%
+<%	
+
+	
     // 현재 페이지 가져오기
     int currentPage = 1;
     if (request.getParameter("currentPage") != null) {
@@ -63,7 +65,7 @@
 <title>Film List</title>
 </head>
 <body>
-    <h2>Film List</h2>
+    <h2>Inventory List</h2>
     <table border="1">
         <tr>
             <th>Inventory ID</th>
@@ -86,9 +88,9 @@
 				    // returnDate가 null인 경우를 체크
 				    if (returnDate != null && !returnDate.equals("대여불가")) { 
 				%>
-				        <a href="/sakila/d0327/inventoryList.jsp">대여</a>
+				       <a href='/sakila/d0327/insertRentalForm.jsp?inventoryId=<%=map.get("inventoryId")%>'>대여하기</a>
 				<%
-				    }
+				    } 
 				%>
             </td>
         </tr>
